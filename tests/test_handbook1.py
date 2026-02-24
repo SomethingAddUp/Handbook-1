@@ -2,7 +2,7 @@ import pytest
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-import POM.PSce as PSce
+import POM.psce as psce
 
 def AJAX_Wait(driver,filter_object):
     for objects in filter_object:
@@ -44,7 +44,7 @@ def priority_sort(y):  # standby in case the dynamic table switch to numerical s
 @pytest.mark.parametrize(("EmployeeID", "LastName", "JobTitle"),[("0034", "Hamilton", "Software Engineer")])
 @pytest.mark.login
 def test_handbook1(driver, EmployeeID, LastName, JobTitle):
-    orangehrm = PSce.OrangeHRM(driver)
+    orangehrm = psce.OrangeHRM(driver)
     rows = orangehrm.open_pim_page()
     assert len(rows) > 0
 

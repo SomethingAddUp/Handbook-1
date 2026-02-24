@@ -1,27 +1,26 @@
-# Handbook-1
-## About
-This repository is my personal learning journal for Python, Selenium, and pytest.  
-I use it to practice automation exercises, track my progress, and store useful notes/snippets.
+# Portfolio #1: Python Selenium in OrangeHRM Demo
 
-## Contents
-- `notes/` → Learning notes, tips, and explanations  
-- `examples/` → Small code exercises  
-- `projects/` → End-to-end mini-projects (Selenium / pytest)
+## Description
+This project allows me to acquire first-hand experience by identifying proper locator syntax, 
+navigation flow, python logic, re-usable helpers and parametrize markers.
 
-## How I’m Learning
-- Python basics → data types, loops, functions  
-- Selenium → web automation and testing  
-- pytest → writing test cases, assertions, and reporting  
-- Git & GitHub → version control, commits, and pushing projects
+## Tech Stack
+- Python, Selenium WebDriver, Conftest + Pytest
+- ChromeDriver, WebDriver Manager
 
-## Progress Log (Optional)
-| Date       | Topic / Exercise                 | Status          |
-|-----------|---------------------------------|----------------|
-| 2026-02-15 | Git setup and GitHub account    | ✅ Completed    |
-| 2026-02-16 | Selenium basics practice        | 🔄 In Progress  |
-| 2026-02-17 | Pytest assertions practice      | 🔄 In Progress  |
+## Webpage
+- OrangeHRM Demo : https://opensource-demo.orangehrmlive.com/
 
-## Notes
+## Features
+1. Login and PIM page verifications. Extract employee list table.
+2. Filter a specific employee from employee form.
+3. Clear filter. Test both ascending and descending sorts after numerical / text normalization.
+
+## Challenges
+1. Handle dynamic UI change by pinpointing the employee list table container before pagination aim.
+2. Determine table sort order in numerical or lexicographic mode.
+
+## Setup & Run
 - I commit small changes frequently  
 - I push exercises to GitHub for backup and tracking  
 - This is a **learning repository**, not a finished project
